@@ -1,4 +1,4 @@
-package main.java.builder;
+package builder;
 
 /**
  * Created by federico on 27/03/17.
@@ -20,12 +20,16 @@ public final class Person {
     }
 
     /*
-     * Our static factory method class is going to return a 'Dni' (PersonBuilder implements this interface)
+     * Our static factory method method is going to return a 'Dni' (PersonBuilder implements this interface)
      * this enforce the client to use the abstract method from 'Dni' interface like a walk through if you wish
      */
     public static Dni builder() {
         return new PersonBuilder();
     }
+
+    /* GETTERS */
+    public String getDni() { return this.dni; }
+    public String getLastName() { return this.lastName; }
 
     @Override
     public String toString() {

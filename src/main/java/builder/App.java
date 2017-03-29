@@ -1,4 +1,4 @@
-package main.java.builder;
+package builder;
 
 /**
  * Created by federico on 27/03/17.
